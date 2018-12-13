@@ -1,0 +1,15 @@
+@import '../../components/layout/colors.scss';
+@import '../../components/layout/fonts.scss';
+
+.title {
+  font-size: $font-size-largest;
+  font-family: "Intro", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.title_light {
+  color: $color-lightText;
+}
+.title_dark {
+  color: $color-darkText;
+}

@@ -1,0 +1,28 @@
+@import '../../components/layout/colors.scss';
+@import '../../components/layout/fonts.scss';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+.list {
+  margin: 0;
+  padding: 0;
+}
+.list__item {
+  font-size: $font-size-large;
+  font-family: "Open Sans", sans-serif;
+  line-height: $line-heigth-base;
+  color: $color-lightText;
+  list-style-type: none;
+  margin-top: 27px;
+  &:before {
+    content: '—';
+    color: $color-lightText;
+    display: inline-block;
+    width: 9px;
+    margin-left: -11px;
+    text-align: right;
+    direction: rtl;
+  }
+}
+.list__item_margin-bottom {
+  margin: 0 0 80px 0;
+}

@@ -1,0 +1,18 @@
+.media-icons {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  > li {
+    list-style: none;
+    padding: 3px;
+  }
+}
+.media-icons__item {
+  width: 2.7vw;
+  height: 2.7vw;
+  display: block;
+}

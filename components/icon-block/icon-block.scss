@@ -1,0 +1,47 @@
+@import '../../components/layout/colors.scss';
+@import '../../components/layout/fonts.scss';
+
+.icon-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-block_cyan {
+ background-color: $color-brand-1;
+}
+.icon-block_red {
+  background-color: $color-brand-2;
+}
+.icon-block_brown {
+  background-color: $color-brand-3;
+  &::before {
+    content: '';
+    width: 11%;
+    height: 11%;
+    transform: rotate(45deg);
+    position: relative;
+    right: 33%;
+    margin-right: -11%;
+    background-color: $color-brand-3; 
+  }
+}
+.icon-block__icon {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.icon-block__icon_heart {
+  background-image: url(../../assets/images/icon-shape-heart.png);
+  width: 7vw;
+  height: 7vw;
+}
+.icon-block__icon_gear {
+  background-image: url(../../assets/images/icon-shape-gear.png);
+  width: 15vw;
+  height: 15vw;
+}
+.icon-block__icon_star {
+  background-image: url(../../assets/images/icon-shape-star.png);
+  width: 11vw;
+  height: 11vw;
+}

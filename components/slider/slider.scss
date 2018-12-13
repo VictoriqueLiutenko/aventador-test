@@ -1,0 +1,40 @@
+@import '../../components/layout/colors.scss';
+
+.slider {
+  background-color: $color-sliderBackground;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.slider__slide {
+  height: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  display: none;
+}
+.slider__arrow {
+  position: absolute;
+  content: '';
+  display: block;
+  cursor: pointer;
+  border: 1.8vw solid transparent;
+  align-self: center;
+}
+.slider__arrow-prev {
+  border-right: 1.9vw solid $color-sliderArrows;
+  left: -0.5%;
+}
+.slider__arrow-next {
+  border-left: 1.9vw solid $color-sliderArrows;
+  left: 46.5%;
+}
+
+@media(min-width: 1600px) {
+  .slider__slide {
+    height: 100%;
+    min-width: 94%;
+    max-width: 100%;
+    padding: 0px 3%;
+  }
+}

@@ -1,0 +1,44 @@
+@import '../../components/layout/colors.scss';
+@import '../../components/layout/fonts.scss';
+
+.menu__items {
+  padding: 0;
+  display: flex;
+  font-family: "Intro", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.menu__item {
+  list-style-type: none;
+  margin: 34px -22px 16px 16px;
+  padding: 17px 25px 12px 24px;
+}
+.menu__item_active {
+  background-color: $color-brand-1;
+  &:after {
+    content: '';
+    background-color: $color-brand-1;
+    background-color: #516e6a;
+    width: 20px;
+    height: 15px;
+    display: block;
+    position: relative;
+    transform: rotate(45deg);
+    left: 0px;
+    top: 11px;
+    margin: -9px;
+  }
+  > .menu__link, .menu__link:hover {
+    border: none;
+  }
+}
+.menu__link,
+.menu__link:hover,
+.menu__link:active,
+.menu__link:visited {
+  color: $color-menuItem;
+  font-size: $font-size-larger;
+  letter-spacing: 2.6px;
+  text-decoration: none;
+  border-bottom: 1px solid $color-menuItem;
+}

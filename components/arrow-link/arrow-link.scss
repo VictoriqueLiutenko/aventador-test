@@ -1,0 +1,37 @@
+@import '../../components/layout/colors.scss';
+@import '../../components/layout/fonts.scss';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+.arrow-link {
+  list-style-type: none;
+  > a,
+    a:hover,
+    a:active,
+    a:visited {
+    font-size: $font-size-large;
+    font-family: "Open Sans", sans-serif;
+    line-height: $line-heigth-base;
+    letter-spacing: -0.3px;
+    color: $color-lightText;
+    text-decoration: none;
+    border-bottom: 1px solid $color-lightText;
+  }
+  &:before {
+    content: "";
+    background-image: url(/assets/images/icon-arrow-green.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #8e8470;
+    display: inline-block;
+    width: 27px;
+    height: 8px;
+    margin-left: -2px;
+    margin-right: 1px;
+    text-align: right;
+    direction: rtl;
+  }
+}
+.arrow-link_margin {
+  margin: 29px 40px 45px 58px;
+}

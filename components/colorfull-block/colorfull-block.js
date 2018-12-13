@@ -1,0 +1,1 @@
+import './colorfull-block.scss'
